@@ -1,0 +1,11 @@
+
+syntax = "v1"
+
+info(
+	title: "app"
+	desc: "app管理接口"
+	author: "horizon"
+	email: "1820120473@qq.com"
+	version: "v1"
+)
+
