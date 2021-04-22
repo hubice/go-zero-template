@@ -7,15 +7,15 @@ import (
 	"fmt"
 	"github.com/tal-tech/go-zero/rest/httpx"
 
-	"dark-work/service/workm/crm/api/internal/config"
-	"dark-work/service/workm/crm/api/internal/handler"
-	"dark-work/service/workm/crm/api/internal/svc"
+	"dark-work/service/userm/crm/api/internal/config"
+	"dark-work/service/userm/crm/api/internal/handler"
+	"dark-work/service/userm/crm/api/internal/svc"
 
 	"github.com/tal-tech/go-zero/core/conf"
 	"github.com/tal-tech/go-zero/rest"
 )
 
-var configFile = flag.String("f", "etc/app-api.yaml", "the config file")
+var configFile = flag.String("f", "etc/user-api.yaml", "the config file")
 
 func main() {
 	flag.Parse()

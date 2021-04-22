@@ -24,5 +24,7 @@ func NewWorkIndexIndexLogic(ctx context.Context, svcCtx *svc.ServiceContext) Wor
 }
 
 func (l *WorkIndexIndexLogic) WorkIndexIndex() (*types.WorkIndexIndexResp, error) {
-	return &types.WorkIndexIndexResp{}, nil
+	return &types.WorkIndexIndexResp{
+		Msg: "work ...",
+	}, nil
 }

@@ -1,0 +1,22 @@
+// goctl api go -api D:/work/dark-work/assets/apis/userm/user-api.api -dir D:/work/dark-work/service/userm/crm/api
+
+import "assets/apis/userm/user.api"
+
+type (
+	UserIndexIndexResp {
+		Msg string `json:"msg"`
+	}
+)
+
+@server(
+	group: v1/user
+)
+service app-api {
+	@doc (
+		summary: "work首页"
+	)
+	@server(
+		handler: UserIndexIndexHandler
+	)
+	get /user/index/index() returns (UserIndexIndexResp)
+}
