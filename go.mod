@@ -1,4 +1,4 @@
-module gp-zero-template
+module dark-work
 
 go 1.15
 

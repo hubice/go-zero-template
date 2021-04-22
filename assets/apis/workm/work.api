@@ -2,10 +2,9 @@
 syntax = "v1"
 
 info(
-	title: "app"
-	desc: "app管理接口"
+	title: "work"
+	desc: "work管理接口"
 	author: "horizon"
 	email: "1820120473@qq.com"
-	version: "v1"
+	version: "1.0.0"
 )
-

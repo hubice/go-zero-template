@@ -1,0 +1,22 @@
+// goctl api go -api D:/work/dark-work/assets/apis/workm/work-api.api -dir D:/work/dark-work/service/workm/crm/api
+
+import "assets/apis/workm/work.api"
+
+type (
+	WorkIndexIndexResp {
+		Msg string `json:"msg"`
+	}
+)
+
+@server(
+	group: v1/work
+)
+service app-api {
+	@doc (
+		summary: "work首页"
+	)
+	@server(
+		handler: WorkIndexIndexHandler
+	)
+	get /work/index/index() returns (WorkIndexIndexResp)
+}
