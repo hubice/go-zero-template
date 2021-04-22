@@ -15,7 +15,7 @@ import (
 	"github.com/tal-tech/go-zero/rest"
 )
 
-var configFile = flag.String("f", "etc/user-api.yaml", "the config file")
+var configFile = flag.String("f", "assets/etcs/appm/user-api.yaml", "the config file")
 
 func main() {
 	flag.Parse()
